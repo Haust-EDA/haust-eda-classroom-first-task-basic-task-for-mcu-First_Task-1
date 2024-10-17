@@ -1,30 +1,48 @@
 
 
-void delay_ms(unsigned int x)  // 延时函数
+void delay_ms   ( unsigned int x )     // 延迟函数
 {
-    unsigned int i,j;
-    if(x==1000)
+    无符号整型i,j;
+    如果（x== 1000）
     {
-        for(i=0;i<19601;i++)//延时1s
+        for     ( i= 0 ;i< 19601 ;i++ )      // 延迟 1s
         {
-            for(j=5;j>0;j--);
+            对于( j= 5 ;j> 0 ;j-- ) ;
         }
     }
-    else while(x--)for(j=115;j>0;j--);
+    否则而( x-- )对于( j= 115 ;j> 0 ;j-- ) ;
 }
 
-// tips: 原理图当中led为低电平点亮，比如点亮LED2,代码为： P0 = 0xFE (1111 1110)
+// Tips：原理图LED为低电平点亮，比如点亮LED2,代码为： P0 = 0xFE (1111 1110)
 
 
-int main(void)
+int 主函数（无效）
 {
-    """
-    在下方编写你的代码
-    """
+   // ”“”在下面编写了你的​​​​​​代码
     
-
- 
-
-    return 0;
+    RCC_APB2PeriphClockCmd（ RCC_APB2Periph_GPIOA，ENABLE）；
+    GPIO_InitTypDef A;
+    A、GPIO_mode =GPIO_Mode_Out_PP；	  
+	A、GPIO_Pin = GPIO_Pin_All；				
+	A、GPIO_speed = GPIO_speed_50MHz；
+    while(1)
+	{
+        
+        GPIO_Write(GPIOA, ~0x0001);
+		Delay_ms(100);				
+		GPIO_Write(GPIOA, ~0x0002);	
+		Delay_ms(100);	
+        GPIO_Write(GPIOA, ~0x0004);
+		Delay_ms(100);				
+		GPIO_Write(GPIOA, ~0x0008);
+		Delay_ms(100);				
+		GPIO_Write(GPIOA, ~0x0010);	
+		Delay_ms(100);				
+		GPIO_Write(GPIOA, ~0x0020);	
+		Delay_ms(100);				
+		GPIO_Write(GPIOA, ~0x0040);	
+		Delay_ms(100);				
+    }
 }
+  
 
