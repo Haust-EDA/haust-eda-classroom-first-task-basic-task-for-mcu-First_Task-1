@@ -29,19 +29,19 @@ int 主函数（无效）
 	{
         
                 GPIO_Write （ GPIOA，〜0x0001）；
-		延迟_毫秒（100）；				
+		Delay_ms（100）；				
 		GPIO_Write （ GPIOA，〜0x0002）；	
-		延迟_毫秒（100）；	
+		Delay_ms（100）；	
                 GPIO_Write （ GPIOA，〜0x0004）；
-		延迟_毫秒（100）；				
+		Delay_ms（100）；				
 		GPIO_Write （ GPIOA，〜0x0008）；
-		延迟_毫秒（100）；				
+		Delay_ms（100）；				
 		GPIO_Write （ GPIOA，〜0x0010）；	
-		延迟_毫秒（100）；				
+		Delay_ms（100）；				
 		GPIO_Write （ GPIOA，〜0x0020）；	
-		延迟_毫秒（100）；				
+		Delay_ms（100）；				
 		GPIO_Write （ GPIOA，〜0x0040）；	
-		延迟_毫秒（100）；				
+		Delay_ms（100）；				
     }
 }
   
