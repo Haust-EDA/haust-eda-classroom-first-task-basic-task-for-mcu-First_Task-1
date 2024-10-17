@@ -28,11 +28,11 @@ int 主函数（无效）
     while(1)
 	{
         
-        GPIO_Write(GPIOA, ~0x0001);
+                GPIO_Write(GPIOA, ~0x0001);
 		Delay_ms(100);				
 		GPIO_Write(GPIOA, ~0x0002);	
 		Delay_ms(100);	
-        GPIO_Write(GPIOA, ~0x0004);
+                GPIO_Write(GPIOA, ~0x0004);
 		Delay_ms(100);				
 		GPIO_Write(GPIOA, ~0x0008);
 		Delay_ms(100);				
