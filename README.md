@@ -1,4 +1,4 @@
-[ ] ！[评估作业预期日期] ( https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg ) (https://classroom.github.com/a/rtPGwteW)
+[评估作业预期日期] (https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)(https://classroom.github.com/a/rtPGwteW)
 #第一个任务
 C 的 First_Task
 
@@ -23,7 +23,7 @@ void delay_ms(unsigned int x) // 延迟函数
     否则 while(x--)for(j=115;j>0;j--);
 }
 
-// Tips:原理图LED为低电平点亮，比如点亮LED2,代码为： P0 = 0xFE (1111 1110)
+// Tips：原理图LED为低电平点亮，比如点亮LED2,代码为： P0 = 0xFE (1111 1110)
 
 
 int 主函数（无效）
@@ -34,7 +34,7 @@ int 主函数（无效）
     A、GPIO_mode =GPIO_Mode_Out_PP；	  
 	A、GPIO_Pin = GPIO_Pin_All；				
 	A、GPIO_speed = GPIO_speed_50MHz；
-	同时(1)
+	while( 1)
 	{
         
                 GPIO_Write（ GPIOA，〜0x0001）；
